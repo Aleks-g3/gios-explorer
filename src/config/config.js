@@ -27,7 +27,7 @@ const castToBoolean = (value) => {
     }
 }
 
-const kafkaHost = getOrDefault("KAFKA_HOST", "10.1.1.50:9092");
+const kafkaHost = getOrDefault("KAFKA_HOST", "localhost:9092");
 const kafkaTopic = getOrDefault("KAFKA_TOPIC", "update.gios.measurement");
 const pgUser = getOrDefault("PG_USER", "airqreadonly");
 const pgPassword = getOrThrow("PG_PASSWORD");
